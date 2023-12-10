@@ -67,6 +67,16 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
+            Card(
+              clipBehavior: Clip
+                  .antiAlias, // Clip.antiAlias for anti-aliased rounded corners
+              elevation: 5,
+              child: ClipRRect(
+                borderRadius:
+                    BorderRadius.circular(10), // Adjust the radius as needed
+                child: Image.asset('images/logo1.png'),
+              ),
+            )
           ],
         ),
       ),
